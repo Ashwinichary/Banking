@@ -1,0 +1,166 @@
+
+1) Jagged array
+
+
+package practice;
+
+public class jagged {
+
+	public static void main(String[] args) {
+		int[][]  a=new int[4][];
+		a[0]=new int[4];
+		a[1]=new int[2];
+		a[2]=new int[5];
+		a[3]=new int[3];
+		//first row
+		a[0][0]=10;
+		a[0][1]=11;
+		a[0][2]=12;
+		a[0][3]=13;
+		//second row
+		a[1][0]=14;
+		a[1][1]=15;
+		//third row
+		a[2][0]=16;
+		a[2][1]=17;
+		a[2][2]=18;
+		a[2][3]=19;
+		a[2][4]=20;
+		// fourth row
+		a[3][0]=21;
+		a[3][1]=22;
+		a[3][2]=23;
+		System.out.println("jagged array");
+		for(int i=0;i<=3;i++)
+		{
+			for(int j=0;j<=a[i].length-1;j++)
+			{
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+
+	}
+
+}
+
+
+
+
+2)2d array mutiplication
+
+
+
+package practice;
+
+import java.util.Scanner;
+
+public class mult {
+
+	public static void main(String[] args) {
+		int[][] a=new int[2][2];
+		int[][] b=new int[2][2];
+		int[][] c=new int[2][2];
+		System.out.println("enter first array");
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<=1;i++)
+		{
+			for(int j=0;j<=1;j++)
+			{
+				a[i][j]=sc.nextInt();
+			}
+		}
+		System.out.println("enter second array");
+		for(int i=0;i<=1;i++)
+		{
+			for(int j=0;j<=1;j++)
+			{
+				b[i][j]=sc.nextInt();
+			}
+		}
+		System.out.println("result array..");
+		for(int i=0;i<=1;i++)
+		{
+			for(int j=0;j<=1;j++)
+			{
+				c[i][j]=0;
+				for(int k=0;k<=1;k++)
+					c[i][j]=c[i][j]+(a[i][k]*b[k][j]);
+				System.out.print(c[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+
+
+3) single pgm
+
+package practice;
+
+import java.util.Scanner;
+
+public class single {
+
+	public static void main(String[] args) {
+		int[] sid=new int[4];
+		String[] sname=new String[4];
+		double[]  att=new double[4];
+		System.out.println("enter student all details");
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<=3;i++)
+		{
+			sid[i]=sc.nextInt();
+			sname[i]=sc.next();
+			att[i]=sc.nextDouble();
+		}
+		System.out.println("all students details");
+		for(int i=0;i<=3;i++)
+		{
+			System.out.println(sid[i]+" "+sname[i]+" "+att[i]);
+		}
+
+	}
+
+
+
+	}
+
+4)even or odd
+
+
+package practice;
+
+import java.util.Scanner;
+
+public class even {
+
+	public static void main(String[] args) {
+		int even=0,odd=0;
+		int[] a=new int[10];
+		System.out.println("Enter array");
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<=9;i++)
+		{
+			a[i]=sc.nextInt();
+			System.out.println(a[i]);
+			if(a[i]%2==0) {
+				System.out.print("even number");
+			    even++;
+		}
+			else
+			{
+				System.out.print("odd number");
+			    odd++;
+			}
+		}
+
+	}
+
+}
+
+
