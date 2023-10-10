@@ -1,0 +1,102 @@
+1)Instance variable
+
+package practice;
+public class instance {
+	int stid;
+	String stname;
+	int fee;
+	double results;
+	void show()
+	{
+	System.out.println(stid+" "+stname+" "+fee+" "+results);
+	}
+
+	public static void main(String[] args) {
+		instance I=new instance();
+		I.stid=10;
+		I.stname="ashu";
+		I.fee=54000;
+		I.results=88.8;
+		I.show();
+	}
+
+}
+
+
+
+
+
+
+2)Static variable 
+
+package practice;
+public class Static {
+		static int stid;
+		static String stname;
+		static int fee;
+		static double results;
+		static void show()
+		{
+		System.out.println(stid+" "+stname+" "+fee+" "+results);
+		}
+
+		public static void main(String[] args) {
+			Static.stid=10;
+			Static.stname="ashu";
+			Static.fee=10000;
+			Static.results=90.0;
+			show();
+			
+
+	}
+
+	
+	}
+
+
+
+
+2.1)Static variable2
+    
+
+package practice;
+
+public class Static2 {
+	static int stid=10;
+	static String stname="ashu";
+	static int fee=1000;
+	static double results=90.0;
+	
+	public static void main(String[] args) {
+		System.out.println(stid+" "+stname+" "+fee+" "+results);
+		
+	}
+
+}
+
+
+
+
+
+
+
+3)Local Variable
+
+package practice;
+public class Local {
+	void show(int stid,String stname)
+	{
+		System.out.println(stid+" "+stname);
+	}
+      public static void main(String[] args) {
+			Local L=new Local();
+			L.show(10, "ashu");
+			
+
+		
+
+
+
+	}
+
+}
