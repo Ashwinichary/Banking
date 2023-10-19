@@ -1,0 +1,175 @@
+1)Multiple Inheritece
+
+
+package practice;
+interface Red{
+	void show() ;
+	}
+interface Green{
+	void accept();
+}
+class Yellow implements Red,Green{
+	public void show() {
+		System.out.println("It is Red");
+	}
+	public void accept() {
+		System.out.println("It is Green");
+	}
+}
+
+public class Multiple {
+
+	public static void main(String[] args) {
+	Yellow Y=new Yellow();
+	Y.show();
+	Y.accept();
+	
+
+	}
+
+}
+
+
+
+
+2)Super constructor
+
+
+
+package practice;
+class Fruits{
+	
+	Fruits(int x,String y)
+			{
+		System.out.println(x+" "+y);
+	}
+}
+class Apple extends Fruits{
+
+	Apple() {
+		super(10,"mango");
+		
+		System.out.println("Apple is good for health");
+	}
+	
+}
+public class Superconstructor {
+	
+
+	public static void main(String[] args) {
+		Apple a=new Apple();
+
+} }
+
+
+
+3)Override Methods
+
+
+package practice;
+class Bank{
+	void intr() {
+		System.out.println("0% intrest");
+	}
+}
+class Sbi extends Bank{
+	void intr() {
+		System.out.println("7% intrest");
+	}
+}
+class Axis extends Bank{
+	void intr() {
+		System.out.println("8% intrest");
+		
+	}
+}
+class Icici extends Bank{
+	void intr() {
+		System.out.println("9% intrest");
+	}
+}
+
+
+public class override {
+
+	public static void main(String[] args) {
+		Sbi s=new Sbi();
+		s.intr();
+		Axis a= new Axis();
+		a.intr();
+		Icici i=new Icici();
+		i.intr();
+
+	}
+
+}
+
+
+
+4)Swap with method overloading
+
+
+package practice;
+
+class A1{
+	void swap(int x,int y) {
+	int t;
+	t=x;
+	x=y;
+	y=t;
+	System.out.println(x+" "+y);
+		}
+	void swap (double x,double y) {
+		double t;
+		t=x;
+		x=y;
+		y=t;
+		System.out.println(x+" "+y);
+		
+	}
+}
+
+public class Overloading {
+	
+
+	public static void main(String[] args) {
+		A1 a=new A1();
+		a.swap(10,30);
+		a.swap(100, 900);
+	}
+
+}
+
+
+
+5)Abstract class using hirerchial inheritence
+
+package practice;
+abstract class Shape{
+	abstract void show();
+	}
+class Square extends Shape{
+		void show() {
+			System.out.println("It is squre shape");
+		}
+	}
+		
+
+class Round extends Shape{
+	void show() {
+		System.out.println("It is  square shape");
+	}
+}
+public class Abstract {
+
+	public static void main(String[] args) {
+		Square s=new Square();
+		Round r=new Round();
+		s.show();
+		r.show();
+		
+
+	}
+
+}
+
