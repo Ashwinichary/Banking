@@ -1,0 +1,67 @@
+1)String
+  
+package practice;
+
+public class Stringdemo {
+
+	public static void main(String[] args) {
+		String s1="ashu";
+		String s2="yashu";
+		String s3="ashu";
+		System.out.println(s1+ " "+s2+" "+s3);
+		System.out.println(s1.concat("chary"));
+		System.out.println(s1.charAt(2));
+		System.out.println(s1.substring(0,2));
+		System.out.println(s1.replace("ashu","shashi"));
+		System.out.println(s1.indexOf("h"));
+		System.out.println(s1.startsWith("m"));
+		System.out.println(s1.endsWith("u"));
+		System.out.println(s1.equals("yashu"));
+	}
+
+}
+
+
+2)StringBuffer and Stringbuilder
+
+package practice;
+
+public class Stringdemo2 {
+
+	public static void main(String[] args) {
+		StringBuffer s1=new StringBuffer("ashu");
+		StringBuilder s2=new StringBuilder("yashu");
+	        System.out.println(s1.reverse());
+		System.out.println(s1.delete(0,2));
+		System.out.println(s1.append("chary"));
+		System.out.println(s2.insert(0,"chary"));
+		System.out.println(s1.length());
+		
+	
+		
+
+}
+}
+
+
+3)Object
+
+
+package practice;
+
+public class Stringobj {
+
+	public static void main(String[] args) {
+		
+		String cr1="vanilla";
+		String cr2=new String("Butterscotch");
+		StringBuilder cr3= new StringBuilder("Chocolate");
+		StringBuffer cr4=new StringBuffer("Strawberry");
+		System.out.println(cr1.equals(cr2));
+		System.out.println(cr2==cr1);
+		System.out.println(cr3.hashCode());
+		System.out.println(cr4.toString());
+		System.out.println(cr1.getClass());
+			}
+}
+
