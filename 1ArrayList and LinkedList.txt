@@ -1,0 +1,43 @@
+1)ArrayList and LinkedList
+
+package collection;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+class Emp{
+	int eid;
+	String ename;
+	double sal;
+	public Emp(int eid,String ename,double sal) {
+		super();
+		this.eid=eid;
+		this.ename=ename;
+		this.sal=sal;
+	}
+}
+
+public class Employe {
+
+	public static void main(String[] args) {
+		Emp e=new Emp(10, "ashu", 100000);
+		Emp e1=new Emp(11, "yashu", 500000);
+		Emp e3=new Emp(12, "prav", 50000);
+		
+		ArrayList<Emp> ep=new ArrayList<Emp>();
+		ep.add(e);
+		ep.add(e1);
+		ep.add(e3);
+		LinkedList<Emp> ll=new LinkedList<Emp>();
+		Emp e4=new Emp(13, "sharath", 200000);
+		Emp e5=new Emp(10, "sudheer", 100000);
+		ll.add(e5);
+		ll.add(e4);
+		ep.addAll(1,ll);
+		for(Emp s:ep) {
+			System.out.println(s.eid+" "+s.ename+" "+s.sal);
+		}
+		
+	}
+
+}
