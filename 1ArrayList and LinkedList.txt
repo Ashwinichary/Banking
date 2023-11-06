@@ -1,4 +1,4 @@
-1)ArrayList and LinkedList
+1)Create emp details and add details ,print details using ArrayList and LinkedList class
 
 package collection;
 
